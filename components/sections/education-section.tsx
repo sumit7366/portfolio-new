@@ -4,6 +4,21 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
+
+const calculateProgress = (startDate: string, endDate: string): number => {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const today = new Date();
+
+  if (today < start) return 0; // not started yet
+  if (today > end) return 100; // already completed
+
+  const total = end.getTime() - start.getTime();
+  const elapsed = today.getTime() - start.getTime();
+  if (total <= 0) return 0;
+  return Math.min(100, Math.max(0, (elapsed / total) * 100));
+};
+
 const education = [
   {
     degree: 'Master of Computer Applications (MCA)',
@@ -12,7 +27,8 @@ const education = [
     period: '2025 - 2027',
     expected: 'Apr 2027',
     status: 'ongoing',
-    progress: 20,
+    // Automatically calculate based on start (Apr 2025) to expected (Apr 2027)
+    progress: calculateProgress('2025-08-01', '2027-05-01'),
     description: 'Specializing in advanced software development and AI/ML',
     highlights: [
       'Focus on AI/ML and Data Science',
@@ -72,11 +88,10 @@ export function EducationSection() {
 
               <div className="relative">
                 <motion.div
-                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4 ${
-                    edu.status === 'ongoing'
+                  className={`inline-flex items-center gap-2 px-4 py-2 rounded-full mb-4 ${edu.status === 'ongoing'
                       ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400'
                       : 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
-                  }`}
+                    }`}
                   whileHover={{ scale: 1.05 }}
                 >
                   <GraduationCap className="w-5 h-5" />
@@ -141,7 +156,7 @@ export function EducationSection() {
           ))}
         </div>
 
-  {/* Future Roadmap removed as requested */}
+        {/* Future Roadmap removed as requested */}
       </div>
     </section>
   );

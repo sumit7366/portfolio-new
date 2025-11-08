@@ -37,6 +37,92 @@ const experiences = [
     role: 'Xavier Coding Club Member',
     company: "St. Xavier's College",
     period: '2022 - Present',
+    description: 'Active participant in coding projects, workshops, and open-source contributions',
+    achievements: [
+      'Contributed to Python automation projects',
+      'Participated in data analysis initiatives',
+      'Mentored junior members',
+      'Organized coding workshops',
+    ],
+    tech: ['Python', 'Web Development', 'Data Analysis'],
+    metrics: { projects: '10+' },
+  },
+  {
+    role: 'UI Path Member',
+    company: 'UI Path Academy',
+    period: '2023 - Present',
+    description: 'Certified in RPA development and automation solutions',
+    achievements: [
+      'Completed RPA developer certification',
+      'Built automation workflows to optimize repetitive tasks',
+      'Participated in RPA community sessions',
+      'Shared knowledge with peers through workshops',
+    ],
+    tech: ['UI Path', 'Automation', 'Workflow Design'],
+    metrics: { certification: 'RPA Developer' },
+  },
+  {
+    role: 'HHFC Participant',
+    company: 'HHFC Initiative',
+    period: '2023',
+    description: 'Contributed to health and financial coding challenges',
+    achievements: [
+      'Completed hands-on projects for health-tech solutions',
+      'Collaborated with teams to design innovative apps',
+      'Presented solutions in virtual hackathons',
+      'Received recognition for contribution',
+    ],
+    tech: ['Python', 'Data Analysis', 'Web Development'],
+    metrics: { projects: '3+' },
+  },
+  {
+    role: 'Freelance Full-Stack Developer',
+    company: 'Self-Employed',
+    period: '2023 - Present',
+    description: 'Developed dynamic web applications with modern tech stack',
+    achievements: [
+      'Built responsive web applications',
+      'Implemented REST APIs with JWT authentication',
+      'Deployed applications on cloud platforms',
+      'Maintained 99% uptime',
+    ],
+    tech: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    metrics: { uptime: '99%' },
+  },
+
+
+  {
+    role: 'ML Intern',
+    company: 'CodeAlpha',
+    period: 'Mar 2024 - Jun 2024',
+    description: 'Built and tuned machine learning models with focus on accuracy and performance optimization',
+    achievements: [
+      'Developed ML models with 15% accuracy improvement',
+      'Created Flask APIs with 20% reduced latency',
+      'Implemented comprehensive data preprocessing pipelines',
+      'Collaborated with cross-functional teams',
+    ],
+    tech: ['Python', 'TensorFlow', 'Scikit-learn', 'Flask', 'Pandas'],
+    metrics: { efficiency: '+15%' },
+  },
+  {
+    role: 'Python Development Intern',
+    company: 'OctaNet Services',
+    period: 'Jan 2024 - Mar 2024',
+    description: 'Developed Python automation tools and scripts to enhance workflow efficiency',
+    achievements: [
+      'Boosted workflow efficiency by 30%',
+      'Saved 5+ hours per week through automation',
+      'Created modular and reusable Python scripts',
+      'Improved data processing pipelines',
+    ],
+    tech: ['Python', 'Automation', 'Data Processing'],
+    metrics: { efficiency: '+30%' },
+  },
+  {
+    role: 'Xavier Coding Club Member',
+    company: "St. Xavier's College",
+    period: '2022 - Present',
     description: 'Active participant in coding projects and technical initiatives',
     achievements: [
       'Contributed to Python automation projects',
@@ -92,9 +178,8 @@ export function ExperienceSection() {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: index * 0.2 }}
-                className={`relative flex flex-col md:flex-row gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex flex-col md:flex-row gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
               >
                 <div className="md:w-1/2" />
 

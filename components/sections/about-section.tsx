@@ -83,19 +83,47 @@ export function AboutSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 }}
               >
-                Hi there! I'm <span className="font-bold text-blue-500">Sumit Kumar</span> 👋
+                Hi there! I&apos;m <span className="font-bold text-blue-500">Sumit Kumar</span> 👋
               </motion.p>
 
-              <motion.p
-                className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6"
+              <motion.div
+                className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6 space-y-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.4 }}
               >
-                A passionate Computer Science student from the BCA Department at St. Xavier's College,
-                currently pursuing my MCA from KIIT. I'm an AI/ML enthusiast who loves building
-                data-driven, scalable applications that make a real impact.
-              </motion.p>
+                <p>
+                  I&apos;m a passionate <strong>Computer Science student</strong> with a BCA from <strong>St. Xavier&apos;s College</strong>
+                  and currently pursuing my <strong>MCA at KIIT University</strong>. As an aspiring <strong>AI/ML Developer and Full-Stack Technologist</strong>,
+                  I&apos;m driven by a deep curiosity for data-driven innovation and intelligent systems that create real-world impact.
+                </p>
+
+                <p>
+                  With a strong foundation in <strong>Python</strong>, I focus on exploring and implementing algorithms in
+                  <strong> Machine Learning and Artificial Intelligence</strong>. My goal is to build smart, scalable, and efficient
+                  solutions that bridge the gap between complex data models and practical user applications.
+                </p>
+
+                <p>
+                  Beyond my AI/ML pursuits, I have developed solid skills in <strong>Full-Stack Web Development</strong>,
+                  including both <strong>frontend and backend</strong> technologies. This holistic approach enables me to design complete
+                  solutions—from predictive modeling to deployment—ensuring seamless integration of intelligent systems into
+                  functional and user-friendly platforms.
+                </p>
+
+                <p>
+                  I also maintain proficiency in <strong>C</strong>, which strengthens my understanding of core computer science principles
+                  and performance optimization.
+                </p>
+
+                <p>
+                  I&apos;m eager to apply my technical expertise, analytical mindset, and passion for innovation to impactful projects,
+                  while connecting with professionals and organizations shaping the future of <strong>AI, Data Science, and Software Development</strong>.
+                </p>
+
+                <p>Let&apos;s build something extraordinary together.</p>
+              </motion.div>
+
 
               <motion.p
                 className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6"
@@ -103,7 +131,7 @@ export function AboutSection() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.5 }}
               >
-                Dreaming of building impactful software that shapes the future 🚀
+                Dreaming of building impactful software that shapes the future . 
               </motion.p>
             </div>
 

@@ -74,9 +74,12 @@ export function ContactSection() {
             <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 text-white h-full">
               <h3 className="text-3xl font-bold mb-6">Open to Opportunities</h3>
               <p className="text-lg mb-8 text-blue-100">
-                Currently open to full-time developer roles, freelance AI projects, and collaborations.
-                Let&apos;s build the future together!
+                Actively seeking <strong>full-time developer roles</strong>, <strong>freelance AI/ML projects</strong>,
+                and <strong>collaborative research or innovation opportunities</strong>.
+                Eager to contribute technical expertise, creativity, and a problem-solving mindset to
+                forward-thinking teams shaping the future of technology.
               </p>
+
 
               <div className="space-y-6">
                 <motion.div
@@ -180,7 +183,7 @@ export function ContactSection() {
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full"
-                    placeholder="John Doe"
+                    placeholder="Sumit Kumar"
                   />
                 </div>
 
@@ -202,7 +205,7 @@ export function ContactSection() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full"
-                    placeholder="john@example.com"
+                    placeholder="sumitranjanhisu@gmail.com"
                   />
                 </div>
 

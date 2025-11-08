@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ArrowRight, Code2, Database, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const techIcons = [
   { Icon: Code2, color: 'text-blue-500', delay: 0 },
@@ -126,12 +127,15 @@ export function HeroSection() {
                 whileHover={{ rotateY: 5, rotateX: 5 }}
                 style={{ transformStyle: 'preserve-3d' }}
               >
-                {/* Use the profile photo from public/ - Next Image could be used but keeping simple <img> to avoid adding imports */}
-                <img
+                <Image
                   src="/sumit profile photo.png"
                   alt="Sumit Kumar"
+                  width={320}
+                  height={320}
                   className="w-full h-full object-cover rounded-full"
+                  priority
                 />
+                
               </motion.div>
 
               {techIcons.map(({ Icon, color, delay }, index) => (
@@ -264,7 +268,7 @@ export function HeroSection() {
               {[
                 { Icon: Github, href: 'https://github.com/sumit7366', label: 'GitHub' },
                 { Icon: Linkedin, href: 'https://www.linkedin.com/in/sumit7366/', label: 'LinkedIn' },
-                { Icon: Mail, href: 'mailto:sumit@example.com', label: 'Email' },
+                { Icon: Mail, href: 'mailto:sumitranjanhisu@gmail.com', label: 'Email' },
               ].map(({ Icon, href, label }, index) => (
                 <motion.a
                   key={label}

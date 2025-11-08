@@ -16,7 +16,7 @@ const navLinks = [
 const socialLinks = [
   { Icon: Github, href: 'https://github.com/sumit7366', label: 'GitHub' },
   { Icon: Linkedin, href: 'https://www.linkedin.com/in/sumit7366/', label: 'LinkedIn' },
-  { Icon: Mail, href: 'mailto:sumit@example.com', label: 'Email' },
+  { Icon: Mail, href: 'mailto:sumitranjanhisu@gmail.com', label: 'Email' },
 ];
 
 export function Footer() {
@@ -111,14 +111,18 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-sm text-slate-400"
-          >
-            © 2025 Sumit Kumar. Built with ❤️ and React.
-          </motion.p>
+          
+          <div className="w-full flex justify-center md:justify-center">
+            <motion.p
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="text-sm text-slate-400"
+            >
+              © 2025 Sumit Kumar. All rights reserved.
+            </motion.p>
+          </div>
+
 
           <motion.div
             initial={{ opacity: 0 }}
