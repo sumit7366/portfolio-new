@@ -1,4 +1,4 @@
-# Sumit Kumar - Portfolio Website
+# Sumit Kumar - Portfolio 
 
 A highly professional, recruiter-attracting portfolio website built with Next.js 14, featuring stunning animations, interactive charts, and a modern design.
 
