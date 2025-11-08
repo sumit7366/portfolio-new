@@ -4,7 +4,7 @@ A highly professional, recruiter-attracting portfolio website built with Next.js
 
 ## 🚀 Live Demo
 
-Visit the live site: [sumitkportfoliodev.netlify.app]
+👉 [Visit the Live Site](https://sumitkportfoliodev.netlify.app)
 
 ## ✨ Features
 
