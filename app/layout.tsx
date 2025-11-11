@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sumitdev.netlify.app'),
+  metadataBase: new URL('https://sumitkportfoliodev.netlify.app/'),
   title: 'Sumit Kumar - Full-Stack & AI Developer | Python/React Expert',
   description: 'A passionate Computer Science student and AI/ML Enthusiast building data-driven, scalable applications. Expertise in Python, React, Node.js, TensorFlow—boosted workflow efficiency by 30% and ML model accuracy by 15%.',
   keywords: 'Full-Stack Developer, AI Developer, ML Engineer, Python, React, Node.js, TensorFlow, Sumit Kumar',
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Sumit Kumar - Full-Stack & AI Developer',
     description: 'Building scalable, data-driven applications with AI/ML expertise',
-    url: 'https://sumitdev.netlify.app',
-    siteName: 'Sumit Kumar Portfolio',
+    url: 'https://sumitkportfoliodev.netlify.app/',
+    siteName: 'Sumit Portfolio',
     locale: 'en_US',
     type: 'website',
   },
@@ -43,7 +43,7 @@ export default function RootLayout({
               '@type': 'Person',
               name: 'Sumit Kumar',
               jobTitle: 'Full-Stack Developer & AI/ML Enthusiast',
-              url: 'https://sumitdev.netlify.app',
+              url: 'https://sumitkportfoliodev.netlify.app/',
               sameAs: [
                 'https://github.com/sumit7366',
                 'https://www.linkedin.com/in/sumit7366/',
